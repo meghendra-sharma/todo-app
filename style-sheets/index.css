@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+}
+.parent-container{
+    margin-top: 50px;
+}
+.child-container1{
+    width: 80%;
+    height: 60px;
+    
+    margin: auto;
+    position: relative;
+}
+.tasks{
+    font-size: 45px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.lists{
+    font-size: 45px;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.child-container1-text{
+    position: absolute;
+    left: 5px;
+}
+.child-container1-icon{
+    position: absolute;
+    right: 5px;
+}
+.add-list{
+    font-size: 35px;
+    color: gray;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.plus-icon{
+    font-size: 40px;
+    color: red;
+    margin-right: 5px;
+}
+#temp-heading{
+    font-size: 30px;
+    font-style: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    color: grey;
+
+}
+
+/*this is the styling of the section where all the cards will diplay on the web page*/
+#cards-list{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 60px;
+    
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+
+.task-card{
+    width: 200px;
+    height: 350px;
+    
+    position: relative;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 3px gray;
+}
+
+.task-card-trash-icon{
+    position: absolute;
+    font-size: 35px;
+    right: 5px;
+    bottom: 5px;
+}
+.task-card-plus-icon{
+    position: absolute;
+    font-size: 35px;
+    right: 40px;
+    bottom: 5px;
+    color: red;
+}
+.reading-text{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+hr{
+    margin-left: 20px;
+}
+.subtask-item{
+    text-align: center;
+    
+    
+    
+    
+    margin-top: 15px;
+}
+.subtask-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    
+}
+
+.subtask-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    
+    font-weight: 500;
+    
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;;
+}
+
+/* from here the styling of popup is coded*/
+
+
+
+
+.popup-container{
+    width: 100%;
+    height: 100%;
+    position :absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    
+    background-image: linear-gradient(rgb(211,211,211,0.8),rgb(211,211,211,0.8));
+    display: none;
+    
+    
+    
+    
+}
+.add-new-list{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: red;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.popup-child-container{
+    width: 400px;
+    height: 200px;
+    left: 500px;
+    top: 200px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    z-index: 3;
+    
+    box-shadow: 2px 2px 5px 3px gray;
+    position: absolute;
+    display: none;
+}
+.text-field{
+    width:250px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.add-button{
+    width: 150px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 0px solid red;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
